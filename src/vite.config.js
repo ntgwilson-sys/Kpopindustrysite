@@ -4,11 +4,9 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for assets
+  base: process.env.GITHUB_ACTIONS ? '/Kpopindustrysite/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    // Ensure CSS is properly extracted
-    cssCodeSplit: true,
   },
 });
