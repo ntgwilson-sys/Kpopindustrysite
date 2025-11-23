@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), local('Roboto-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  --color-primary: #F5E6E8;
+  --color-secondary: #D5C6E0;
+  --color-tertiary: #AAA1C8;
+  --color-quaternary: #967AA1;
+  --color-dark: #192A51;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #967AA1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #192A51;
+}
